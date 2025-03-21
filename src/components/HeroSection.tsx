@@ -2,6 +2,7 @@
 import React from 'react';
 import EmailForm from './EmailForm';
 import AnimatedGradient from './ui-custom/AnimatedGradient';
+import { Flame } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,18 +14,19 @@ const HeroSection: React.FC = () => {
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           <div className="inline-block mb-6 animate-fade-in">
-            <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full">
-              Coming Soon
-            </span>
+            <div className="px-4 py-2 rounded-full bg-chimera-light/80 flex items-center gap-2">
+              <Flame className="text-chimera-orange h-5 w-5" />
+              <span className="text-sm font-medium text-chimera-orange">Fuel Your Morning Potential</span>
+            </div>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-slide-up">
-            Ignite Your Digital Experience With
+            Fire Up Your Mornings With
             <span className="text-chimera-orange"> Chimera</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl animate-slide-up delay-100">
-            Join our waitlist to be the first to experience a revolutionary app that transforms the way you connect, create, and collaborate.
+            Transform your morning routine and break free from distractions with Chimera, the app that helps you build consistent habits and unlock your daily potential.
           </p>
           
           <div className="w-full max-w-md mx-auto mb-12 animate-slide-up delay-200">
@@ -32,7 +34,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="relative animate-float">
-            <AnimatedGradient className="rounded-full p-2">
+            <AnimatedGradient variant="fire" className="rounded-full p-2">
               <img 
                 src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
                 alt="Chimera Mascot" 

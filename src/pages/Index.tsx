@@ -6,7 +6,7 @@ import FeatureCard from '@/components/FeatureCard';
 import EmailForm from '@/components/EmailForm';
 import Footer from '@/components/Footer';
 import AnimatedGradient from '@/components/ui-custom/AnimatedGradient';
-import { Flame, Zap, Lock, Sparkles, ArrowRight } from 'lucide-react';
+import { Flame, Zap, Lock, Sparkles, ArrowRight, AlarmClock, SmartphoneX, Trophy, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -41,6 +41,105 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection />
       
+      {/* Problem Section */}
+      <section id="problem" className="py-24 relative bg-white">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-chimera-orange/5 rounded-full blur-3xl -z-10"></div>
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full inline-block mb-4">
+              The Challenge
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Reclaim Your Mornings, Ignite Your Potential</h2>
+            <p className="text-muted-foreground text-lg">
+              Endless scrolling. Silenced alarms. Another morning wasted to the dopamine rush of social media. We've all been there.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="order-2 md:order-1">
+              <div className="space-y-6">
+                <div className="flex gap-4 items-start">
+                  <div className="bg-red-100 p-3 rounded-lg">
+                    <AlarmClock className="h-6 w-6 text-red-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Morning Discipline Fading</h3>
+                    <p className="text-muted-foreground">Studies show that lack of a morning routine disrupts mental clarity and emotional regulation throughout your day.</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="bg-orange-100 p-3 rounded-lg">
+                    <SmartphoneX className="h-6 w-6 text-chimera-orange" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Digital Distractions</h3>
+                    <p className="text-muted-foreground">The constant dopamine hits from social media are stealing your most productive hours.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 md:order-2">
+              <AnimatedGradient variant="fire" className="rounded-2xl p-4">
+                <img 
+                  src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
+                  alt="Morning distractions" 
+                  className="w-full h-auto rounded-xl shadow-lg" 
+                />
+              </AnimatedGradient>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Solution Section */}
+      <section className="py-24 relative bg-gradient-to-b from-amber-50 to-white">
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-chimera-yellow/20 rounded-full blur-3xl -z-10"></div>
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full inline-block mb-4">
+              Our Solution
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Chimera: Your Morning Guardian</h2>
+            <p className="text-muted-foreground text-lg">
+              Chimera empowers you to achieve daily goals, cultivate consistency, and unlock your full potential by transforming your morning routine.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <AnimatedGradient className="rounded-2xl p-3">
+                <div className="relative animate-float">
+                  <img 
+                    src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
+                    alt="Chimera Mascot" 
+                    className="h-64 w-auto mx-auto"
+                  />
+                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
+                </div>
+              </AnimatedGradient>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold mb-4">How Chimera Works</h3>
+              <p className="text-muted-foreground text-lg mb-6">
+                Meet your new morning companion - a friendly fire spirit that grows stronger as you complete your morning routine. Feed Chimera with wood by completing tasks, and watch its flame grow brighter with each accomplishment.
+              </p>
+              <p className="text-muted-foreground text-lg mb-6">
+                Fail to complete your routine, and Chimera's fire begins to dim. But keep the streak alive, and watch as your morning guardian blazes with pride!
+              </p>
+              <Button 
+                className="bg-chimera-orange text-white hover:bg-chimera-orange/90 gap-2 group"
+              >
+                <span>Learn more about Chimera</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Features Section */}
       <section id="features" className="py-24 relative">
         <div className="container">
@@ -48,48 +147,36 @@ const Index = () => {
             <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full inline-block mb-4">
               Features
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Discover the Magic of Chimera</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Fuel Your Morning Fire</h2>
             <p className="text-muted-foreground text-lg">
-              Our platform combines cutting-edge technology with intuitive design to bring you the best experience possible.
+              Our platform combines smart app control, gamification, and community support to transform your morning routine.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard 
-              title="Blazing Fast"
-              description="Experience lightning-speed performance that keeps up with your workflow without any lag."
-              icon={Zap}
+              title="App Locking"
+              description="Temporarily locks distracting apps until your morning routine is complete, helping you stay focused."
+              icon={Lock}
               delay="delay-100"
             />
             <FeatureCard 
-              title="Secure & Private"
-              description="Your data is protected with state-of-the-art encryption and privacy-first design principles."
-              icon={Lock}
+              title="Routine Builder"
+              description="Create flexible morning routines that work for you, with essential apps remaining accessible."
+              icon={AlarmClock}
               delay="delay-200"
             />
             <FeatureCard 
-              title="Intuitive Design"
-              description="Our user-friendly interface makes navigation and usage a breeze for everyone."
-              icon={Sparkles}
+              title="Gamification"
+              description="Earn wood to feed Chimera's flame, unlock achievements, and watch your fire spirit grow stronger."
+              icon={Trophy}
               delay="delay-300"
             />
             <FeatureCard 
-              title="Smart Integration"
-              description="Seamlessly connects with your favorite tools and platforms for a unified experience."
-              icon={Flame}
+              title="Community"
+              description="Connect with friends, share progress, and keep each other accountable with community challenges."
+              icon={Users}
               delay="delay-400"
-            />
-            <FeatureCard 
-              title="Customizable"
-              description="Tailor the platform to your specific needs with flexible customization options."
-              icon={Sparkles}
-              delay="delay-500"
-            />
-            <FeatureCard 
-              title="Always Evolving"
-              description="Constant updates and new features ensure you're always ahead of the curve."
-              icon={Flame}
-              delay="delay-600"
             />
           </div>
         </div>
@@ -102,24 +189,24 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full inline-block mb-4">
-                About Us
+                Our Vision
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">We're Building the Future of Digital Experience</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Stoke the Flames of Productivity</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Chimera started with a simple idea: to create a platform that truly understands and adapts to how people work and connect in the digital age.
+                At Chimera, we believe the first hour of your day determines the quality of your waking hours. Our app helps you reclaim this critical time.
               </p>
               <p className="text-muted-foreground text-lg mb-8">
-                Our team of passionate innovators is dedicated to crafting an experience that's not just functional, but delightful. We believe technology should enhance human connection, not replace it.
+                By combining motivation, gamification, and personalization, we make building consistent morning habits both enjoyable and rewarding. Let's reignite your morning potential together.
               </p>
               <Button 
                 className="bg-chimera-orange text-white hover:bg-chimera-orange/90 gap-2 group"
               >
-                <span>Learn more about our story</span>
+                <span>Discover our story</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <AnimatedGradient className="rounded-2xl p-3">
+              <AnimatedGradient variant="fire" className="rounded-2xl p-3">
                 <div className="relative animate-float">
                   <img 
                     src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
@@ -135,10 +222,10 @@ const Index = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-24 relative bg-gradient-to-br from-chimera-orange/10 to-chimera-yellow/10">
+      <section className="py-24 relative bg-gradient-to-br from-chimera-orange/10 via-amber-100/30 to-chimera-yellow/10">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join the Revolution?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Ignite Your Mornings?</h2>
             <p className="text-muted-foreground text-lg mb-8">
               Be among the first to experience Chimera when we launch. Sign up for our waitlist today and get exclusive early access.
             </p>
