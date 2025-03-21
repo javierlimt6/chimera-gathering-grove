@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
@@ -6,11 +5,10 @@ import FeatureCard from '@/components/FeatureCard';
 import EmailForm from '@/components/EmailForm';
 import Footer from '@/components/Footer';
 import AnimatedGradient from '@/components/ui-custom/AnimatedGradient';
-import { Flame, Zap, Lock, Sparkles, ArrowRight, AlarmClock, SmartphoneX, Trophy, Users } from 'lucide-react';
+import { Flame, Zap, Lock, Sparkles, ArrowRight, AlarmClock, Smartphone, Trophy, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
-  // Smooth scroll for anchor links
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -70,7 +68,7 @@ const Index = () => {
                 
                 <div className="flex gap-4 items-start">
                   <div className="bg-orange-100 p-3 rounded-lg">
-                    <SmartphoneX className="h-6 w-6 text-chimera-orange" />
+                    <Smartphone className="h-6 w-6 text-chimera-orange" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Digital Distractions</h3>
