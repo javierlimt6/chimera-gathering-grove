@@ -33,16 +33,16 @@ const HeroSection: React.FC = () => {
             <EmailForm variant="hero" />
           </div>
           
-          <div className="relative animate-float">
-            <AnimatedGradient variant="fire" className="rounded-full p-2">
-              <img 
+          {/* <div className="relative animate-float"> */}
+            {/* <AnimatedGradient variant="fire" className="rounded-full p-2"> */}
+              {/* <img 
                 src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
                 alt="Chimera Mascot" 
                 className="h-40 w-auto"
-              />
-            </AnimatedGradient>
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-3 bg-black/10 rounded-full blur-md"></div>
-          </div>
+              /> */}
+            {/* </AnimatedGradient> */}
+            {/* <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-3 bg-black/10 rounded-full blur-md"></div> */}
+          {/* </div> */}
         </div>
       </div>
     </section>

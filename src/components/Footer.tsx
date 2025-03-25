@@ -54,7 +54,9 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Links</h3>
+            <h3 className="font-semibold text-lg mb-4"><p>
+              Links (they don't really work yet...)
+              </p></h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-chimera-orange transition-colors">

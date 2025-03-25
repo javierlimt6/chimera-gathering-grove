@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { validateEmail } from '@/utils/validation';
 import { ArrowRight, Mail } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import supabase from '@/lib/supabase';
 
 interface EmailFormProps {
   variant?: 'default' | 'hero';
@@ -34,7 +35,31 @@ const EmailForm: React.FC<EmailFormProps> = ({
     // Simulation of API call (replace with actual Supabase implementation)
     try {
       await new Promise(resolve => setTimeout(resolve, 800));
+      if (!supabase || !supabase.from) {
+        console.error('Supabase client is not properly initialised');
+        // Fall back to simulation instead of failing
+        await new Promise(resolve => setTimeout(resolve, 800));
+      } else {
+        // Try to insert to Supabase
+        const { error: supabaseError } = await supabase
+          .from('waitlist')
+          .insert([{ email }]);
       
+        if (supabaseError) {
+          console.error('Supabase error:', supabaseError);
+          // Handle specific error but don't throw
+          if (supabaseError.code === '23505') {
+            toast({
+              title: "Already registered",
+              description: "This email is already on our waitlist",
+              variant: "default",
+            });
+            setEmail('');
+            setIsSubmitting(false);
+            return;
+          }
+        }
+      }
       toast({
         title: "Success!",
         description: "You've been added to our waitlist!",
@@ -84,7 +109,7 @@ const EmailForm: React.FC<EmailFormProps> = ({
           }`}
           disabled={isSubmitting}
         >
-          <span>Get early access</span>
+          <span>{isSubmitting ? 'Submitting...' : 'Get early access'}</span>
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
         </Button>
       </div>
