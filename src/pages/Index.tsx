@@ -105,8 +105,8 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+          <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
+            <div className="mb-8">
               <AnimatedGradient className="rounded-2xl p-3">
                 <div className="relative animate-float">
                   <img 
@@ -127,12 +127,6 @@ const Index = () => {
               <p className="text-muted-foreground text-lg mb-6">
                 Fail to complete your routine, and Chimera's fire begins to dim. But keep the streak alive, and watch as your morning guardian blazes with pride!
               </p>
-              <Button 
-                className="bg-chimera-orange text-white hover:bg-chimera-orange/90 gap-2 group"
-              >
-                <span>Learn more about Chimera</span>
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
             </div>
           </div>
         </div>
@@ -194,14 +188,14 @@ const Index = () => {
                 At Chimera, we believe the first hour of your day determines the quality of your waking hours. Our app helps you reclaim this critical time.
               </p>
               <p className="text-muted-foreground text-lg mb-8">
-                By combining motivation, gamification, and personalization, we make building consistent morning habits both enjoyable and rewarding. Let's reignite your morning potential together.
+                By combining motivation, gamification, and personalisation, we make building consistent morning habits both enjoyable and rewarding. Let's reignite our morning potential together!
               </p>
-              <Button 
+              {/* <Button 
                 className="bg-chimera-orange text-white hover:bg-chimera-orange/90 gap-2 group"
               >
                 <span>Discover our story</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
+              </Button> */}
             </div>
             <div className="order-1 md:order-2 flex justify-center">
               <AnimatedGradient variant="fire" className="rounded-2xl p-3">
@@ -225,7 +219,7 @@ const Index = () => {
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Ignite Your Mornings?</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Be among the first to experience Chimera when we launch. Sign up for our waitlist today and get exclusive early access.
+              Be among the first to experience Chimera, coming soon. Sign up to join as a beta tester now, and get the earliest updates for when we launch.
             </p>
             <div className="max-w-md mx-auto">
               <EmailForm />

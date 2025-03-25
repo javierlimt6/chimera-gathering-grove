@@ -51,6 +51,9 @@ const NavBar: React.FC = () => {
             About
           </a>
           <Button 
+            onClick={() => {
+              window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+            }}
             className="bg-accent text-chimera-orange hover:bg-accent/80 font-medium"
           >
             Join Waitlist
