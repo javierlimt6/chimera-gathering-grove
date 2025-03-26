@@ -109,8 +109,10 @@ const Index = () => {
           
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-8">
             {/* Reduced mb-16 to mb-8 */}
-            <div className="mb-8">
-              <AnimatedGradient className="rounded-2xl p-3">
+           <div className="mb-8">
+           <div className="bg-gradient-to-r from-orange-400 to-blue-300 rounded-2xl p-4 animate-gradient-x">
+           <div className="flex justify-center items-end gap-4 md:gap-8">
+                {/* Main Chimera mascot */}
                 <div className="relative animate-float">
                   <img 
                     src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
@@ -119,8 +121,29 @@ const Index = () => {
                   />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
                 </div>
-              </AnimatedGradient>
+
+                {/* First sprite - smaller companion */}
+                {/* <div className="relative animate-float" style={{animationDelay: "0.2s"}}>
+                  <img 
+                    src="/chimera-small.png" 
+                    alt="Small Chimera Companion" 
+                    className="h-48 w-auto mx-auto"
+                  />
+                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-3 bg-black/10 rounded-full blur-md"></div>
+                </div> */}
+                
+                {/* Third sprite - another companion */}
+                <div className="relative animate-float" style={{animationDelay: "0.4s"}}>
+                  <img 
+                    src="/chimerasad.png" 
+                    alt="Chimera Sad" 
+                    className="h-64 w-auto mx-auto"
+                  />
+                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-3 bg-black/10 rounded-full blur-md"></div>
+                </div>
+              </div>
             </div>
+          </div>
             
             <div>
               <h3 className="text-2xl font-bold mb-4">How Chimera Works</h3>
@@ -179,35 +202,36 @@ const Index = () => {
           {/* App UI Mockups */}
           <div className="mt-24 mb-8">
             <div className="flex flex-wrap justify-center gap-8">
-              <div className="relative w-[280px]">
-                    <img 
-                      src="/home2.png" 
-                      alt="Home Screen (Locked)" 
-                      className="h-auto w-auto"
-                    />
-                </div>
+              <div className="relative w-[280px] flex flex-col items-center">
+                <img 
+                  src="/home2.png" 
+                  alt="Home Screen (Locked)" 
+                  className="h-auto w-auto mb-3"
+                />
+                <p className="font-medium text-center text-chimera-dark">App Locked Mode</p>
+                <p className="text-sm text-muted-foreground text-center">Complete your routine to unlock apps</p>
+              </div>
+              
+              <div className="relative w-[280px] flex flex-col items-center">
+                <img 
+                  src="/lockscreen.png" 
+                  alt="LockScreen Widget" 
+                  className="h-auto w-auto mb-3"
+                />
+                <p className="font-medium text-center text-chimera-dark">Lock Screen Widget</p>
+                <p className="text-sm text-muted-foreground text-center">See what your friends are doing in real-time</p>
+              </div>
 
-              
-              <div className="relative w-[280px] h-[560px] rounded-[40px] border-8 border-gray-900 bg-gray-800 overflow-hidden shadow-xl">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-900 rounded-b-lg"></div>
-                <div className="h-full w-full bg-gradient-to-b from-orange-100 to-amber-50 p-2">
-                  <div className="rounded-3xl overflow-hidden h-full w-full bg-FFCF95 flex items-center justify-center">
-                  <img 
-                    src="/notlocked.png" 
-                    alt="Home Screen (Not Locked)" 
-                    className="h-auto w-auto"
-                  />
-                  </div>
-                </div>
+              <div className="relative w-[280px] flex flex-col items-center">
+                <img 
+                  src="/notlocked2.png" 
+                  alt="Home Screen (Not Locked)" 
+                  className="h-auto w-auto mb-3"
+                />
+                <p className="font-medium text-center text-chimera-dark">Unlocked Home</p>
+                <p className="text-sm text-muted-foreground text-center">All apps available after routine</p>
               </div>
               
-              <div className="relative w-[280px]">
-                  <img 
-                    src="/lockscreen.png" 
-                    alt="Home Screen (Not Locked)" 
-                    className="h-auto w-auto"
-                  />
-              </div>
 
             </div>
           </div>
