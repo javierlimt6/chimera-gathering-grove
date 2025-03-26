@@ -228,8 +228,8 @@ const Index = () => {
                   alt="Home Screen (Not Locked)" 
                   className="h-auto w-auto mb-3"
                 />
-                <p className="font-medium text-center text-chimera-dark">Unlocked Home</p>
-                <p className="text-sm text-muted-foreground text-center">All apps available after routine</p>
+                <p className="font-medium text-center text-chimera-dark">Unlocked Homepage</p>
+                <p className="text-sm text-muted-foreground text-center">After your routine, get your apps back!</p>
               </div>
               
 
@@ -266,7 +266,7 @@ const Index = () => {
                   <img 
                     src="/ai_breakfree.png" 
                     alt="Break Free (AI_generated)" 
-                    className="h-64 w-auto"
+                    className="h-auto w-auto"
                   />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
                 </div>
