@@ -179,19 +179,14 @@ const Index = () => {
           {/* App UI Mockups */}
           <div className="mt-24 mb-8">
             <div className="flex flex-wrap justify-center gap-8">
-              <div className="relative w-[280px] h-[560px] rounded-[40px] border-8 border-gray-900 bg-gray-800 overflow-hidden shadow-xl">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-900 rounded-b-lg"></div>
-                <div className="h-full w-full bg-gradient-to-b from-orange-100 to-amber-50 p-2">
-                  <div className="rounded-3xl overflow-hidden h-full w-full bg-FFCF95 flex items-center justify-center">
-                  
-                  <img 
-                    src="/home.png" 
-                    alt="Home Screen (Locked)" 
-                    className="h-auto w-auto"
-                  />
-                  </div>
+              <div className="relative w-[280px]">
+                    <img 
+                      src="/home2.png" 
+                      alt="Home Screen (Locked)" 
+                      className="h-auto w-auto"
+                    />
                 </div>
-              </div>
+
               
               <div className="relative w-[280px] h-[560px] rounded-[40px] border-8 border-gray-900 bg-gray-800 overflow-hidden shadow-xl">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-900 rounded-b-lg"></div>
