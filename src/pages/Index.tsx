@@ -112,11 +112,11 @@ const Index = () => {
            <div className="mb-8">
            <div className="bg-gradient-to-r from-orange-400 to-blue-300 rounded-2xl p-4 animate-gradient-x">
            <div className="flex justify-center items-end gap-4 md:gap-8">
-                {/* Main Chimera mascot */}
+                {/* happy Chimera mascot */}
                 <div className="relative animate-float">
                   <img 
-                    src="/lovable-uploads/c4992289-4eb3-45dd-93a3-4ad1f21d05d2.png" 
-                    alt="Chimera Mascot" 
+                    src="/chimerahappy.png" 
+                    alt="Happy Chimera Mascot" 
                     className="h-64 w-auto mx-auto"
                   />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
