@@ -101,7 +101,7 @@ const Index = () => {
             <span className="px-3 py-1 text-sm font-medium bg-chimera-light text-chimera-orange rounded-full inline-block mb-4">
               Our Solution
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Chimera: Your Morning Guardian</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Chimera: Your Morning Motivator</h2>
             <p className="text-muted-foreground text-lg">
               Chimera empowers you to achieve daily goals, cultivate consistency, and unlock your full potential by transforming your morning routine.
             </p>
