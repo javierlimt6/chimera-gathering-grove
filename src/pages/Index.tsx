@@ -273,10 +273,11 @@ const Index = () => {
             <div className="order-1 md:order-2 flex justify-center">
                 <div className="relative animate-float">
                   <img 
-                    src="/ai_breakfree.png" 
-                    alt="Break Free (AI_generated)" 
+                    src="/multiple.png" 
+                    alt="Multiple Chimera Mascots" 
                     className="h-auto w-auto"
                   />
+
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
                 </div>
             </div>
