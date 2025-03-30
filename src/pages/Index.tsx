@@ -117,7 +117,7 @@ const Index = () => {
                   <img 
                     src="/chimerahappy.png" 
                     alt="Happy Chimera Mascot" 
-                    className="h-64 w-auto mx-auto"
+                    className="h-auto w-auto mx-auto"
                   />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/10 rounded-full blur-md"></div>
                 </div>
@@ -137,7 +137,7 @@ const Index = () => {
                   <img 
                     src="/chimerasad.png" 
                     alt="Chimera Sad" 
-                    className="h-64 w-auto mx-auto"
+                    className="h-auto w-auto mx-auto"
                   />
                   <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-3 bg-black/10 rounded-full blur-md"></div>
                 </div>
@@ -224,6 +224,16 @@ const Index = () => {
 
               <div className="relative w-[280px] flex flex-col items-center">
                 <img 
+                  src="/applocked.png" 
+                  alt="Locked Apps" 
+                  className="h-auto w-auto mb-3"
+                />
+                <p className="font-medium text-center text-chimera-dark">Locked Apps</p>
+                <p className="text-sm text-muted-foreground text-center">Your apps are locked so you don't get distracted.</p>
+              </div>
+
+              <div className="relative w-[280px] flex flex-col items-center">
+                <img 
                   src="/notlocked2.png" 
                   alt="Home Screen (Not Locked)" 
                   className="h-auto w-auto mb-3"
@@ -231,7 +241,6 @@ const Index = () => {
                 <p className="font-medium text-center text-chimera-dark">Unlocked Homepage</p>
                 <p className="text-sm text-muted-foreground text-center">After your routine, get your apps back!</p>
               </div>
-              
 
             </div>
           </div>
