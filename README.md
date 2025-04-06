@@ -1,69 +1,91 @@
-# Welcome to your Lovable project
+# Chimera Gathering Grove
 
-## Project info
+![Chimera Gathering Grove](https://via.placeholder.com/800x400?text=Chimera+Gathering+Grove)
 
-**URL**: https://lovable.dev/projects/3d0aff33-8832-4381-9120-f063b902b60f
+A modern web application for the Chimera community to connect, share resources, and organize events.
 
-## How can I edit this code?
+## 📋 Features
 
-There are several ways of editing your application.
+- Interactive community calendar
+- Resource sharing platform
+- Community announcements
+- User profiles and networking
+- Event registration and management
 
-**Use Lovable**
+## 🚀 Technologies
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3d0aff33-8832-4381-9120-f063b902b60f) and start prompting.
+This project is built with:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Vite** - Next generation frontend tooling
+- **React** - UI component library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn-ui** - Accessible UI components
 
-**Use your preferred IDE**
+## 🔧 Installation & Setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher)
+- npm or yarn
 
-Follow these steps:
+### Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/chimera-gathering-grove.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd chimera-gathering-grove
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
+# or
+yarn install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
+# or
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
+Your application will be available at `http://localhost:3000`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 👨‍💻 Development Workflow
 
-**Use GitHub Codespaces**
+### Local Development
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Make changes to the codebase
+2. Test changes locally with `npm run dev`
+3. Commit and push changes:
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   git push
+   ```
 
-## What technologies are used for this project?
+### GitHub Integration
 
-This project is built with .
+You can also make quick edits directly in GitHub or use GitHub Codespaces for a cloud development environment.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📦 Deployment
 
-## How can I deploy this project?
+### Custom Domain Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/3d0aff33-8832-4381-9120-f063b902b60f) and click on Share -> Publish.
+For deployment to a custom domain, we recommend:
 
-## I want to use a custom domain - is that possible?
+1. Build your project: `npm run build`
+2. Deploy the contents of the `dist` folder to a service like Netlify
+3. For detailed instructions, see our [custom domain guide](https://docs.lovable.dev/tips-tricks/custom-domain/)
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📬 Contact
+
+For questions or support, please reach out to the project maintainers or open an issue on GitHub.
