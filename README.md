@@ -1,8 +1,6 @@
-# Chimera Gathering Grove
+# Chimera Landing Page (chimeraapp.net)
 
 ![Chimera Gathering Grove](https://via.placeholder.com/800x400?text=Chimera+Gathering+Grove)
-
-A modern web application for the Chimera community to connect, share resources, and organize events.
 
 ## 📋 Features
 
