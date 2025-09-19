@@ -55,20 +55,20 @@ const Index = () => {
       <HeroSection />
 
       {/* Problem Section */}
-      <section id="problem" className="py-24 relative bg-white">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blaze-orange/5 rounded-full blur-3xl -z-10"></div>
+      <section id="problem" className="py-24 relative bg-black">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blaze-orange/20 rounded-full blur-3xl -z-10"></div>
         <div className="container">
           {/* Problem Statement */}
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <span className="px-3 py-1 text-sm font-medium bg-red-100 text-red-600 rounded-full inline-block mb-4">
+            <span className="px-3 py-1 text-sm font-medium bg-red-900/80 text-red-400 rounded-full inline-block mb-4">
               The Morning Crisis
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
               77% of Youths Want Better Mornings.
               <br />
               Only 29% Have Them.
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-gray-300 text-lg mb-8">
               Digital distractions are hijacking our mornings. 71% of people
               check their phones within 10 minutes of waking, spending 2+ hours
               on screens before starting their day productively.
@@ -78,43 +78,49 @@ const Index = () => {
           {/* Problem Illustrations */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 mb-4">
+              <div className="rounded-2xl p-6 mb-4">
                 <img
                   src="/blazeup_slides/story_comicstripoversleep.png"
                   alt="Oversleep and rushing"
                   className="w-full h-48 object-contain mx-auto"
                 />
               </div>
-              <h3 className="font-bold text-lg mb-2">The Endless Snooze</h3>
-              <p className="text-muted-foreground">
+              <h3 className="font-bold text-lg mb-2 text-white">
+                The Endless Snooze
+              </h3>
+              <p className="text-gray-300">
                 Alarm after alarm, but the bed always wins
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 mb-4">
+              <div className="rounded-2xl p-6 mb-4">
                 <img
-                  src="/blazeup_slides/story_failedmorningroutine.png"
+                  src="/blazeup_slides/story_demotiv.png"
                   alt="Failed morning routine"
                   className="w-full h-48 object-contain mx-auto"
                 />
               </div>
-              <h3 className="font-bold text-lg mb-2">Distraction Spiral</h3>
-              <p className="text-muted-foreground">
+              <h3 className="font-bold text-lg mb-2 text-white">
+                Distraction Spiral
+              </h3>
+              <p className="text-gray-300">
                 One notification leads to hours of scrolling
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 mb-4">
+              <div className="rounded-2xl p-6 mb-4">
                 <img
                   src="/blazeup_slides/story_lateforwork.png"
                   alt="Late for work stress"
                   className="w-full h-48 object-contain mx-auto"
                 />
               </div>
-              <h3 className="font-bold text-lg mb-2">Rushed & Stressed</h3>
-              <p className="text-muted-foreground">
+              <h3 className="font-bold text-lg mb-2 text-white">
+                Rushed & Stressed
+              </h3>
+              <p className="text-gray-300">
                 Starting every day behind schedule
               </p>
             </div>
@@ -123,14 +129,14 @@ const Index = () => {
           {/* Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex gap-4 items-start">
-              <div className="bg-red-100 p-3 rounded-lg">
-                <Smartphone className="h-6 w-6 text-red-600" />
+              <div className="bg-red-900/50 p-3 rounded-lg">
+                <Smartphone className="h-6 w-6 text-red-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   Digital Addiction Crisis
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-gray-300">
                   71% check phones within 10 minutes of waking. The dopamine
                   rush from social media steals your most productive hours.
                 </p>
@@ -138,12 +144,14 @@ const Index = () => {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="bg-orange-100 p-3 rounded-lg">
+              <div className="bg-blaze-orange/20 p-3 rounded-lg">
                 <AlarmClock className="h-6 w-6 text-blaze-orange" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">The Routine Gap</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  The Routine Gap
+                </h3>
+                <p className="text-gray-300">
                   Despite wanting structure, most people lack the tools and
                   discipline to build consistent morning habits that stick.
                 </p>
@@ -152,6 +160,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Gradient Transition Section */}
+      <section className="h-32 bg-gradient-to-b from-black via-gray-800 to-amber-50"></section>
 
       {/* Solution Section */}
       <section className="py-24 relative bg-gradient-to-b from-amber-50 to-white">
@@ -219,9 +230,9 @@ const Index = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 mb-4">
+                <div className="rounded-2xl p-6 mb-4">
                   <img
-                    src="/blazeup_slides/story_planningbeforesleep.png"
+                    src="/blazeup_slides/screen_welcomegetstarted.png"
                     alt="Plan your routine"
                     className="w-full h-48 object-contain mx-auto"
                   />
@@ -234,7 +245,7 @@ const Index = () => {
               </div>
 
               <div className="text-center">
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 mb-4">
+                <div className="rounded-2xl p-6 mb-4">
                   <img
                     src="/blazeup_slides/screen_applocked.png"
                     alt="Apps get locked"
@@ -251,7 +262,7 @@ const Index = () => {
               </div>
 
               <div className="text-center">
-                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 mb-4">
+                <div className="rounded-2xl p-6 mb-4">
                   <img
                     src="/blazeup_slides/screen_routinecomplete.png"
                     alt="Routine completed"
