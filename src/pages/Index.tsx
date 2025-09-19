@@ -64,7 +64,7 @@ const Index = () => {
               The Morning Crisis
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-8">
-              77% Want Better Mornings.
+              77% of Youths Want Better Mornings.
               <br />
               Only 29% Have Them.
             </h2>

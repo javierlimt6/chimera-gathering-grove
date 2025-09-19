@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/blazeup_slides/0861518d-ad0f-4cab-936a-f2e5d4e9df78.png"
+                src="/blazeup_slides/blazeup.png"
                 alt="BlazeUp"
                 className="h-8 w-auto"
               />
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                 <Github className="h-5 w-5" />
               </a> */}
               <a
-                href="https://www.linkedin.com/company/blazeupapp"
+                href="https://www.linkedin.com/company/chimeraapp"
                 className="text-muted-foreground hover:text-blaze-orange transition-colors"
                 aria-label="LinkedIn"
                 target="_blank"
