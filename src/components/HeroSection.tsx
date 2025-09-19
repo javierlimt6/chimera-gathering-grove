@@ -27,8 +27,10 @@ const HeroSection: React.FC = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl animate-slide-up delay-100">
-            BlazeUp combines <strong>enforced distraction blocking</strong>, <strong>AI-driven personalization</strong>, 
-            and <strong>real-time social accountability</strong> to transform your morning struggle into a gamified journey of personal growth.
+            BlazeUp combines <strong>enforced distraction blocking</strong>,{" "}
+            <strong>AI-driven personalization</strong>, and{" "}
+            <strong>real-time social accountability</strong> to transform your
+            morning struggle into a gamified journey of personal growth.
           </p>
 
           <div className="w-full max-w-md mx-auto mb-12 animate-slide-up delay-200">
