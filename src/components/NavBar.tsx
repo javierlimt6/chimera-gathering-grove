@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
       <div className="container flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img
-            src="/blazeup_slides/0861518d-ad0f-4cab-936a-f2e5d4e9df78.png"
+            src="/blazeup_slides/blazeup.png"
             alt="BlazeUp"
             className="h-9 w-auto"
           />
