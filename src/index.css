@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -38,9 +37,14 @@
     --radius: 0.75rem;
 
     --chimera-orange: 24 94% 52%;
-    --chimera-yellow: 43 100% 76%; 
+    --chimera-yellow: 43 100% 76%;
     --chimera-light: 43 100% 94%;
     --chimera-dark: 222.2 84% 4.9%;
+
+    --blaze-orange: 24 94% 52%;
+    --blaze-yellow: 43 100% 76%;
+    --blaze-light: 43 100% 94%;
+    --blaze-dark: 222.2 84% 4.9%;
   }
 }
 
@@ -53,7 +57,12 @@
     @apply bg-background text-foreground font-inter antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-poppins font-semibold;
   }
 }
@@ -112,26 +121,57 @@
   }
 }
 
+@keyframes gradient-x {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-pulse-slow,
+  .animate-slide-up,
+  .animate-fade-in,
+  .animate-shimmer,
+  .animate-gradient-x {
+    animation: none;
+  }
+}
+
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-pulse-slow {
-  animation: pulse 3s ease-in-out infinite;
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-slide-up {
-  animation: slideUp 0.5s ease-out forwards;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   background-size: 1000px 100%;
-  animation: shimmer 2s infinite linear;
+  animation: shimmer 3s infinite linear;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
 }
 
 /* Glass morphism */
@@ -144,21 +184,21 @@
 
 /* Animation delays */
 .delay-100 {
-  animation-delay: 100ms;
-}
-
-.delay-200 {
   animation-delay: 200ms;
 }
 
-.delay-300 {
-  animation-delay: 300ms;
-}
-
-.delay-400 {
+.delay-200 {
   animation-delay: 400ms;
 }
 
+.delay-300 {
+  animation-delay: 600ms;
+}
+
+.delay-400 {
+  animation-delay: 800ms;
+}
+
 .delay-500 {
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
 }

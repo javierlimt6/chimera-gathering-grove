@@ -1,6 +1,6 @@
-# Chimera Landing Page (chimeraapp.net)
+# BlazeUp Landing Page
 
-![Chimera Gathering Grove](https://via.placeholder.com/800x400?text=Chimera+Gathering+Grove)
+![BlazeUp](https://via.placeholder.com/800x400?text=BlazeUp)
 
 ## 📋 Features
 
@@ -74,7 +74,7 @@ For deployment to a custom domain, we recommend:
 
 1. Build your project: `npm run build`
 2. Deploy the contents of the `dist` folder to a service like Netlify
-3. For detailed instructions, see our [custom domain guide](https://docs.lovable.dev/tips-tricks/custom-domain/)
+3. Configure your custom domain in the hosting service settings
 
 ## 📝 License
 
